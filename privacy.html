@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — Jonathan Bijaoui</title>
+  <meta name="description" content="How this personal site handles the contact form, hosting, and language preference.">
+  <meta name="theme-color" content="#0A1130">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="canonical" href="https://jonathanbijaoui.com/privacy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jonathan Bijaoui">
+  <meta property="og:url" content="https://jonathanbijaoui.com/privacy.html">
+  <meta property="og:title" content="Privacy policy — Jonathan Bijaoui">
+  <meta property="og:description" content="How this personal site handles the contact form, hosting, and language preference.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>html,body{background:#0A1130;color:#F9F9F9}</style>
+  <script>
+    try {
+      var map = { en: "en", fr: "fr", es: "es", zh: "zh-Hans", "zh-Hans": "zh-Hans", "zh-CN": "zh-Hans" };
+      var q = new URLSearchParams(location.search).get("lang");
+      var chosen = map[q] || "";
+      if (!chosen) {
+        var saved = localStorage.getItem("jb-lang");
+        chosen = map[saved] || "en";
+      }
+      document.documentElement.lang = chosen;
+    } catch (e) {}
+  </script>
+</head>
+<body data-page="privacy">
+  <header class="site-header">
+    <a class="skip" href="#contenido" data-i18n="skip">Skip to content</a>
+    <nav class="social" aria-hidden="true">
+      <ul></ul>
+    </nav>
+    <nav class="icon-nav" aria-label="Menu" data-i18n-aria="icon.nav">
+      <ul>
+        <li>
+          <a href="/" data-i18n-aria="icon.home" data-i18n-title="icon.home" aria-label="Home" title="Home">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M4 11.2 12 4.2l8 7V20a1 1 0 0 1-1 1h-5.2v-6.2H10.2V21H5a1 1 0 0 1-1-1v-8.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="/projects/" data-i18n-aria="icon.projects" data-i18n-title="icon.projects" aria-label="Projects" title="Projects">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M14.2 4.4 19.6 9.8 16.8 12.6 11.4 7.2 14.2 4.4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M11.1 7.5 5.4 13.2a2 2 0 0 0 0 2.8l.3.3M7.6 15.4 4.2 18.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="/creative/" data-i18n-aria="icon.creative" data-i18n-title="icon.creative" aria-label="Creative" title="Creative">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M12 3.4 13.7 9h5.9l-4.8 3.5 1.8 5.7L12 14.8 7.4 18.2 9.2 12.5 4.4 9h5.9L12 3.4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="/services/" data-i18n-aria="icon.services" data-i18n-title="icon.services" aria-label="Services" title="Services">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><rect x="4" y="4" width="6.5" height="6.5" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.6"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.6"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.6"></rect></svg>
+          </a>
+        </li>
+        <li class="contact">
+          <button type="button" class="contact-btn" id="contact-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="contact-panel" data-i18n-aria="icon.contact" data-i18n-title="icon.contact" aria-label="Contact" title="Contact">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M8 4.2h2.1l1.1 2.9-1.5 1a11.2 11.2 0 0 0 5.2 5.2l1-1.5 2.9 1.1v2.1c0 .7-.5 1.3-1.2 1.4A14.4 14.4 0 0 1 6.6 5.4c.1-.7.7-1.2 1.4-1.2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg>
+          </button>
+          <div id="contact-panel" class="contact-panel" role="dialog" aria-modal="false" aria-labelledby="contact-heading" hidden>
+            <div class="contact-head">
+              <h2 id="contact-heading" data-i18n="form.title">Contact</h2>
+              <button type="button" class="contact-close" id="contact-close" data-i18n-aria="form.close" aria-label="Close">
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
+              </button>
+            </div>
+            <form id="contact-form" class="contact-form" action="#" method="post">
+              <div class="field-row">
+                <div class="field">
+                  <label for="contact-name"><span data-i18n="form.name">Name</span></label>
+                  <input id="contact-name" name="name" type="text" autocomplete="given-name" required maxlength="80">
+                </div>
+                <div class="field">
+                  <label for="contact-surname"><span data-i18n="form.surname">Surname</span> <span class="opt" data-i18n="form.optional">optional</span></label>
+                  <input id="contact-surname" name="surname" type="text" autocomplete="family-name" maxlength="80">
+                </div>
+              </div>
+              <div class="field">
+                <label for="contact-email"><span data-i18n="form.email">Email</span></label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120">
+              </div>
+              <div class="field">
+                <label for="contact-phone"><span data-i18n="form.phone">Phone</span> <span class="opt" data-i18n="form.optional">optional</span></label>
+                <input id="contact-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="40" pattern="[0-9 +().-]{0,40}">
+              </div>
+              <div class="field">
+                <label for="contact-message"><span data-i18n="form.message">Message</span></label>
+                <textarea id="contact-message" name="message" rows="4" required maxlength="4000"></textarea>
+              </div>
+              <div class="hp" aria-hidden="true">
+                <label for="contact-company">Company</label>
+                <input id="contact-company" name="company" type="text" tabindex="-1" autocomplete="off">
+              </div>
+              <button type="button" class="attach-btn" id="contact-attach">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M21.44 11.05 12.25 20.24a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <span data-i18n="form.attach">Attach files</span>
+              </button>
+              <input id="contact-file" class="file-input" type="file" accept="image/*,video/*,application/pdf" multiple tabindex="-1" aria-hidden="true">
+              <ul class="file-list" id="contact-files" data-i18n-aria="form.fileList" aria-label="Attached files"></ul>
+              <p class="file-total" id="contact-total" hidden></p>
+              <p class="consent">
+                <input id="contact-consent" name="consent" type="checkbox" required>
+                <label for="contact-consent"><span data-i18n="form.consentBefore">I agree that my information may be used to answer this message, as described in the </span></label><a href="/privacy.html" target="_blank" rel="noopener" data-i18n="form.privacy">privacy policy</a><span data-i18n="form.consentAfter">.</span>
+              </p>
+              <div class="form-notice">
+                <p data-i18n="form.notice">The purpose is to answer your message. The legal basis is your consent. This site stores nothing: the message and files are sent by email and kept only as long as needed to reply, then deleted. To ask about your information (access, correction, deletion, and so on), use this form. You can also contact your local data protection authority.</p>
+                <p data-i18n="form.noticeAge">If you are under 16, use this form only with permission from a parent or guardian.</p>
+                <p data-i18n="form.noticeSensitive">Do not send sensitive information, or photos or videos of other people, without their permission.</p>
+                <p><a href="/privacy.html" target="_blank" rel="noopener" data-i18n="form.noticePolicy">Privacy policy</a></p>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="contact-send" id="contact-send" data-i18n="form.send">Send</button>
+              </div>
+              <p id="contact-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="lang">
+      <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-menu" aria-label="Choose language" data-i18n-aria="lang.label">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M3.75 12h16.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><path d="M12 3.75c2.35 2.55 3.55 5.35 3.55 8.25s-1.2 5.7-3.55 8.25c-2.35-2.55-3.55-5.35-3.55-8.25s1.2-5.7 3.55-8.25z" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg>
+      </button>
+      <ul class="lang-menu" id="lang-menu" role="listbox" aria-labelledby="lang-btn" hidden>
+        <li role="none"><button type="button" role="option" lang="en" data-lang="en" aria-selected="true">English</button></li>
+        <li role="none"><button type="button" role="option" lang="fr" data-lang="fr" aria-selected="false">Français</button></li>
+        <li role="none"><button type="button" role="option" lang="es" data-lang="es" aria-selected="false">Español</button></li>
+        <li role="none"><button type="button" role="option" lang="zh-Hans" data-lang="zh" aria-selected="false">中文</button></li>
+      </ul>
+    </div>
+  </header>
+  <main class="legal-page" id="contenido">
+    <p class="legal-home"><a href="/">Jonathan Bijaoui</a></p>
+    <h1 data-i18n="privacy.heading">Privacy policy</h1>
+
+    <div data-lang-block="en" lang="en">
+      <p>This site does not use cookies, analytics, or advertising.</p>
+      <p>This site does not store contact-form submissions. If you send a message, your name, surname if you provide one, email address, phone number if you provide one, message, and files are sent by email. The purpose is to reply. The legal basis is your consent, which you may withdraw at any time. Your name, email, and message are needed in order to reply. The message and files are kept only as long as needed to handle the enquiry, then deleted.</p>
+      <p>If you are under 16, use the form only with permission from a parent or guardian.</p>
+      <p>Do not send sensitive information, or photos or videos of other people, without their permission.</p>
+      <p>The site is hosted on GitHub Pages (GitHub, Inc., United States), which may log visitors' IP addresses for security and operation, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub's privacy statement</a>.</p>
+      <p>The language you choose is stored only in your browser (localStorage). You can clear it at any time in your browser settings.</p>
+      <p>You can use the contact form to request access, correction, deletion, or a copy of the information you sent, or to withdraw consent. You may also contact your local data protection authority.</p>
+    </div>
+
+    <div data-lang-block="fr" lang="fr" hidden>
+      <p>Ce site n'utilise pas de cookies, d'analyse d'audience ni de publicité.</p>
+      <p>Ce site ne conserve pas les envois du formulaire de contact. Si vous envoyez un message, votre prénom, votre nom si vous l'indiquez, votre adresse e-mail, votre téléphone si vous l'indiquez, le message et les fichiers sont envoyés par e-mail. La finalité est de répondre. La base légale est votre consentement, que vous pouvez retirer à tout moment. Le prénom, l'adresse e-mail et le message sont nécessaires pour pouvoir répondre. Le message et les fichiers sont conservés seulement le temps nécessaire pour traiter la demande, puis supprimés.</p>
+      <p>Si vous avez moins de 16 ans, utilisez le formulaire seulement avec l'autorisation d'un parent ou d'un tuteur.</p>
+      <p>N'envoyez pas d'informations sensibles, ni de photos ou de vidéos d'autres personnes, sans leur autorisation.</p>
+      <p>Le site est hébergé sur GitHub Pages (GitHub, Inc., États-Unis), qui peut enregistrer l'adresse IP des visiteurs pour la sécurité et le fonctionnement, conformément à la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">déclaration de confidentialité de GitHub</a>.</p>
+      <p>La langue choisie est enregistrée seulement dans votre navigateur (localStorage). Vous pouvez l'effacer à tout moment dans les réglages du navigateur.</p>
+      <p>Vous pouvez utiliser le formulaire de contact pour demander l'accès, la rectification, l'effacement ou une copie des informations envoyées, ou pour retirer votre consentement. Vous pouvez aussi vous adresser à l'autorité de protection des données de votre pays.</p>
+    </div>
+
+    <div data-lang-block="es" lang="es" hidden>
+      <p>Este sitio no utiliza cookies, analítica ni publicidad.</p>
+      <p>Este sitio no guarda los envíos del formulario de contacto. Si envías un mensaje, el nombre, los apellidos si los indicas, el correo electrónico, el teléfono si lo indicas, el mensaje y los archivos se envían por correo. La finalidad es responder. La base legal es tu consentimiento, que puedes retirar cuando quieras. El nombre, el correo electrónico y el mensaje son necesarios para poder responder. El mensaje y los archivos se conservan solo el tiempo necesario para atender la consulta y después se borran.</p>
+      <p>Si tienes menos de 16 años, usa el formulario solo con el permiso de tu padre, madre o tutor.</p>
+      <p>No envíes datos sensibles ni fotos o vídeos de otras personas sin su permiso.</p>
+      <p>Está alojado en GitHub Pages (GitHub, Inc., Estados Unidos), que puede registrar la dirección IP de los visitantes por motivos de seguridad y funcionamiento, conforme a la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">declaración de privacidad de GitHub</a>.</p>
+      <p>El idioma que eliges se guarda solo en tu navegador (localStorage) y puedes borrarlo en cualquier momento en los ajustes del navegador.</p>
+      <p>Puedes usar el formulario de contacto para pedir acceso, rectificación, supresión o una copia de la información enviada, o para retirar el consentimiento. También puedes dirigirte a la autoridad de protección de datos de tu país.</p>
+    </div>
+
+    <div data-lang-block="zh" lang="zh-Hans" hidden>
+      <p>本网站不使用 Cookie、统计工具或广告。</p>
+      <p>本网站不保存联系表单的内容。如果你发送消息，姓名、你填写的姓氏、电子邮件、你填写的电话、留言和文件会通过电子邮件发送。目的是回复你的消息。法律依据是你的同意，你可以随时撤回。姓名、电子邮件和留言是回复所需要的。留言和文件只在处理此事项所需的时间内保留，之后会删除。</p>
+      <p>如果未满 16 岁，请在父母或监护人允许后再使用表单。</p>
+      <p>未经允许，请勿发送敏感信息，或他人的照片和视频。</p>
+      <p>本网站托管于 GitHub Pages（GitHub, Inc.，美国）。出于安全和运行需要，GitHub 可能会记录访客的 IP 地址。请参阅 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub 隐私声明</a>。</p>
+      <p>你选择的语言只保存在你的浏览器中（localStorage）。你可以随时在浏览器设置中清除。</p>
+      <p>你可以使用联系表单请求访问、更正、删除或复制你发送的信息，或撤回同意。你也可以联系你所在地的数据保护机构。</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p class="footer-name">Jonathan Bijaoui</p>
+    <p data-i18n="footer.note">Personal site</p>
+    <p class="legal-links">
+      <a href="/privacy.html" data-i18n="legal.privacy" aria-current="page">Privacy</a>
+    </p>
+  </footer>
+  <script src="/js/main.js"></script>
+
+</body>
+</html>
