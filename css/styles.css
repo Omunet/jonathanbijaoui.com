@@ -283,27 +283,64 @@ body {
 }
 
 .hero {
-  position: relative;
   min-height: 100vh;
   min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: max(1rem, env(safe-area-inset-top)) 1rem max(1rem, env(safe-area-inset-bottom));
+}
+
+.hero-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: min(100%, 40rem);
+}
+
+.hero-stack .icon-nav ul {
+  justify-content: center;
 }
 
 .lockup {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   margin: 0;
   font-weight: 500;
   line-height: 0;
 }
 
+.hero-stack #site-nav {
+  position: static;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .hero-logo {
   display: block;
-  width: min(52vw, 200px);
+  width: min(60vw, 220px);
   height: auto;
+}
+
+/* Home: the icon row sits with the logo. Only the language control stays fixed. */
+body.home .site-header {
+  position: static;
+  display: block;
+  min-height: 0;
+  padding: 0;
+  background: transparent;
+}
+
+body.home .social {
+  display: none;
+}
+
+body.home .lang {
+  position: fixed;
+  top: 0.35rem;
+  right: max(0.4rem, env(safe-area-inset-right));
+  z-index: 30;
 }
 
 .site-footer {
@@ -419,6 +456,12 @@ html[lang="zh-Hans"] .legal-home {
   letter-spacing: 0.04em;
 }
 
+@media (max-width: 700px) {
+  .hero-stack {
+    gap: 1rem;
+  }
+}
+
 @media (max-width: 420px) {
   #site-nav a {
     padding: 0.35rem 0.4rem;
@@ -433,7 +476,21 @@ html[lang="zh-Hans"] .legal-home {
   }
 }
 
+@media (max-height: 720px) {
+  .hero-stack {
+    gap: 1.25rem;
+  }
+
+  .hero-logo {
+    width: min(46vw, 180px);
+  }
+}
+
 @media (max-height: 520px) {
+  .hero-stack {
+    gap: 0.65rem;
+  }
+
   .hero-logo {
     width: min(28vh, 120px);
   }
