@@ -49,21 +49,6 @@
     <nav class="social" aria-hidden="true">
       <ul></ul>
     </nav>
-    <div class="lang">
-      <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-menu" aria-label="Choose language" data-i18n-aria="lang.label">
-        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M3.75 12h16.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><path d="M12 3.75c2.35 2.55 3.55 5.35 3.55 8.25s-1.2 5.7-3.55 8.25c-2.35-2.55-3.55-5.35-3.55-8.25s1.2-5.7 3.55-8.25z" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg>
-      </button>
-      <ul class="lang-menu" id="lang-menu" role="listbox" aria-labelledby="lang-btn" hidden>
-        <li role="none"><button type="button" role="option" lang="en" data-lang="en" aria-selected="true">English</button></li>
-        <li role="none"><button type="button" role="option" lang="fr" data-lang="fr" aria-selected="false">Français</button></li>
-        <li role="none"><button type="button" role="option" lang="es" data-lang="es" aria-selected="false">Español</button></li>
-        <li role="none"><button type="button" role="option" lang="zh-Hans" data-lang="zh" aria-selected="false">中文</button></li>
-      </ul>
-    </div>
-  </header>
-  <main id="contenido">
-    <section class="hero" aria-labelledby="wordmark">
-      <div class="hero-stack">
     <nav class="icon-nav" aria-label="Menu" data-i18n-aria="icon.nav">
       <ul>
         <li>
@@ -150,6 +135,21 @@
         </li>
       </ul>
     </nav>
+    <div class="lang">
+      <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-menu" aria-label="Choose language" data-i18n-aria="lang.label">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.25" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M3.75 12h16.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><path d="M12 3.75c2.35 2.55 3.55 5.35 3.55 8.25s-1.2 5.7-3.55 8.25c-2.35-2.55-3.55-5.35-3.55-8.25s1.2-5.7 3.55-8.25z" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg>
+      </button>
+      <ul class="lang-menu" id="lang-menu" role="listbox" aria-labelledby="lang-btn" hidden>
+        <li role="none"><button type="button" role="option" lang="en" data-lang="en" aria-selected="true">English</button></li>
+        <li role="none"><button type="button" role="option" lang="fr" data-lang="fr" aria-selected="false">Français</button></li>
+        <li role="none"><button type="button" role="option" lang="es" data-lang="es" aria-selected="false">Español</button></li>
+        <li role="none"><button type="button" role="option" lang="zh-Hans" data-lang="zh" aria-selected="false">中文</button></li>
+      </ul>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="hero" aria-labelledby="wordmark">
+      <div class="hero-stack">
       <h1 class="lockup" id="wordmark">
         <img class="hero-logo" src="/assets/jb-logo.svg" alt="Jonathan Bijaoui" width="184" height="284">
       </h1>

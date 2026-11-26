@@ -174,12 +174,9 @@ body {
 }
 
 #site-nav {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: max(1.15rem, env(safe-area-inset-bottom));
+  width: 100%;
   margin: 0;
-  padding: 0 0.75rem;
+  padding: 0;
 }
 
 #site-nav ul {
@@ -288,8 +285,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   margin: 0;
-  padding: max(1rem, env(safe-area-inset-top)) 1rem max(1rem, env(safe-area-inset-bottom));
+  /* The header is fixed. This padding is the bar, so the logo and text menu
+     center in the space under it. */
+  padding: 3.4rem 1rem 0;
 }
 
 .hero-stack {
@@ -300,47 +300,16 @@ body {
   width: min(100%, 40rem);
 }
 
-.hero-stack .icon-nav ul {
-  justify-content: center;
-}
-
 .lockup {
   margin: 0;
   font-weight: 500;
   line-height: 0;
 }
 
-.hero-stack #site-nav {
-  position: static;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .hero-logo {
   display: block;
   width: min(60vw, 220px);
   height: auto;
-}
-
-/* Home: the icon row sits with the logo. Only the language control stays fixed. */
-body.home .site-header {
-  position: static;
-  display: block;
-  min-height: 0;
-  padding: 0;
-  background: transparent;
-}
-
-body.home .social {
-  display: none;
-}
-
-body.home .lang {
-  position: fixed;
-  top: 0.35rem;
-  right: max(0.4rem, env(safe-area-inset-right));
-  z-index: 30;
 }
 
 .site-footer {
